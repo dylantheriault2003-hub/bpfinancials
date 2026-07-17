@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Process from "./components/Process";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
+import Faq from "./components/Faq";
 import Booking from "./components/Booking";
 import CtaSection from "./components/CtaSection";
 import Footer from "./components/Footer";
@@ -46,8 +48,10 @@ export default function App() {
       <main>
         <Hero />
         <Services />
+        <Process />
         <About />
         <Testimonials />
+        <Faq />
         <Booking />
         <CtaSection />
       </main>

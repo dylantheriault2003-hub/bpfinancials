@@ -64,7 +64,7 @@ export default function Hero() {
         </div>
 
         {/* Brendon portrait */}
-        <div className="reveal relative mx-auto hidden w-full max-w-sm lg:block">
+        <div className="reveal relative mx-auto w-full max-w-xs sm:max-w-sm">
           <div className="absolute -inset-4 rounded-3xl bg-cobalt-500/20 blur-3xl" />
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-navy-800">
             <img src="/brendon-portrait.png" alt="Brendon Porter, financial planner" className="h-full w-full object-cover" />
