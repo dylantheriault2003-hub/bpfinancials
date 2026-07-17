@@ -51,7 +51,7 @@ export default function Services() {
           {SERVICES.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="reveal group rounded-2xl border border-navy-900/10 bg-white p-8 shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:border-cobalt-500 hover:shadow-cardHover"
+              className="reveal group rounded-2xl border border-navy-900/10 bg-white p-8 text-center shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:border-cobalt-500 hover:shadow-cardHover sm:text-left"
             >
               <div className="mb-5 inline-flex size-12 items-center justify-center rounded-xl bg-cobalt-500/10 text-cobalt-600 transition-colors group-hover:bg-cobalt-500 group-hover:text-white">
                 <Icon className="size-6" />

@@ -24,7 +24,7 @@ export default function About() {
         </div>
 
         {/* copy */}
-        <div>
+        <div className="text-center lg:text-left">
           <p className="reveal mb-3 text-xs font-bold uppercase tracking-[0.25em] text-cobalt-400">About Brendon</p>
           <h2 className="reveal text-4xl font-black tracking-tight sm:text-5xl">
             Financial guidance you can trust.
@@ -46,8 +46,8 @@ export default function About() {
             </p>
           </div>
 
-          <blockquote className="reveal mt-7 border-l-2 border-cobalt-500 pl-5">
-            <Quote className="mb-2 size-5 text-cobalt-400" />
+          <blockquote className="reveal mt-7 border-t-2 border-cobalt-500 pt-5 lg:border-l-2 lg:border-t-0 lg:pl-5 lg:pt-0">
+            <Quote className="mx-auto mb-2 size-5 text-cobalt-400 lg:mx-0" />
             <p className="text-lg font-medium italic text-white">
               I simplify financial planning so you can make confident decisions that support your long-term goals.
             </p>

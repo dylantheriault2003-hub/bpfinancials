@@ -40,7 +40,7 @@ export default function Process() {
           {STEPS.map(({ icon: Icon, step, title, desc }) => (
             <div
               key={step}
-              className="reveal group relative rounded-2xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:border-cobalt-500/50 hover:bg-white/[0.07]"
+              className="reveal group relative rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:border-cobalt-500/50 hover:bg-white/[0.07] md:text-left"
             >
               <div className="mb-6 flex items-center justify-between">
                 <span className="inline-flex size-14 items-center justify-center rounded-2xl bg-cobalt-500/15 text-cobalt-400 transition-colors group-hover:bg-cobalt-500 group-hover:text-white">

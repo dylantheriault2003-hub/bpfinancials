@@ -30,14 +30,14 @@ const SOCIALS = [
 export default function Footer() {
   return (
     <footer id="contact" className="border-t border-white/10 bg-navy-950 pt-16">
-      <div className="container-x grid gap-12 pb-12 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="container-x grid gap-12 pb-12 text-center md:grid-cols-[1.4fr_1fr_1fr] md:text-left">
         <div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-center gap-3 md:justify-start">
             <Logo size={40} />
             <span className="text-lg font-extrabold tracking-tight">{BRAND.name}</span>
           </div>
-          <p className="mt-4 max-w-xs text-sm text-white/60">{BRAND.tagline}</p>
-          <p className="mt-4 max-w-xs text-sm text-white/50">
+          <p className="mx-auto mt-4 max-w-xs text-sm text-white/60 md:mx-0">{BRAND.tagline}</p>
+          <p className="mx-auto mt-4 max-w-xs text-sm text-white/50 md:mx-0">
             Customized financial planning to protect your income, grow your wealth, and secure your future.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function Footer() {
         <div>
           <p className="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">Contact</p>
           <ul className="space-y-3 text-sm text-white/70">
-            <li className="flex items-center gap-2">
+            <li className="flex items-center justify-center gap-2 md:justify-start">
               <MapPin className="size-4 text-cobalt-400" />
               {BRAND.city}
             </li>
@@ -67,14 +67,14 @@ export default function Footer() {
                 href={CALENDLY}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 transition-colors hover:text-white"
+                className="flex items-center justify-center gap-2 transition-colors hover:text-white md:justify-start"
               >
                 <Mail className="size-4 text-cobalt-400" />
                 Book a consultation
               </a>
             </li>
           </ul>
-          <div className="mt-5 flex gap-3">
+          <div className="mt-5 flex justify-center gap-3 md:justify-start">
             {SOCIALS.map(({ icon: Icon, label }) => (
               <a
                 key={label}

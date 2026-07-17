@@ -23,7 +23,7 @@ export default function Booking() {
   return (
     <section id="book" className="bg-navy-950 py-24 skyline">
       <div className="container-x grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-        <div>
+        <div className="text-center lg:text-left">
           <p className="reveal mb-3 text-xs font-bold uppercase tracking-[0.25em] text-cobalt-400">Book a Consultation</p>
           <h2 className="reveal text-4xl font-black tracking-tight sm:text-5xl">
             Grab a free spot on Brendon&apos;s calendar
@@ -35,7 +35,7 @@ export default function Booking() {
 
           <ul className="reveal mt-8 space-y-4">
             {PERKS.map(({ icon: Icon, text }) => (
-              <li key={text} className="flex items-center gap-3">
+              <li key={text} className="flex items-center justify-center gap-3 lg:justify-start">
                 <span className="inline-flex size-9 items-center justify-center rounded-lg bg-cobalt-500/15 text-cobalt-400">
                   <Icon className="size-4" />
                 </span>

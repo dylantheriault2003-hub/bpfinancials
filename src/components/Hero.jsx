@@ -6,18 +6,18 @@ export default function Hero() {
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden bg-navy-900 skyline">
       {/* atmospheric gradient + monogram watermark */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/95 to-navy-900" />
-      <div className="pointer-events-none absolute -left-10 top-1/2 -translate-y-1/2 select-none text-[26rem] font-black leading-none text-white/[0.03]">
+      <div className="pointer-events-none absolute -left-10 top-1/2 hidden -translate-y-1/2 select-none text-[26rem] font-black leading-none text-white/[0.03] lg:block">
         BP
       </div>
 
       <div className="container-x relative z-10 grid items-center gap-12 pt-28 pb-16 lg:grid-cols-[1.15fr_0.85fr] lg:pt-20">
-        <div>
-          <div className="reveal mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-cobalt-400">
-            <span className="h-px w-8 bg-cobalt-500" />
+        <div className="text-center lg:text-left">
+          <div className="reveal mb-6 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-cobalt-400 lg:justify-start">
+            <span className="hidden h-px w-8 bg-cobalt-500 sm:block" />
             Financial Services · Moncton, NB
           </div>
 
-          <h1 className="reveal text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="reveal text-[2.6rem] font-black leading-[1.02] tracking-tight sm:text-6xl sm:leading-[0.95] lg:text-7xl">
             Take Control of
             <br />
             <span className="text-gradient-blue">Your Financial</span>
@@ -25,7 +25,7 @@ export default function Hero() {
             Future.
           </h1>
 
-          <div className="reveal mt-7 flex flex-wrap gap-3">
+          <div className="reveal mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
             {["Protect.", "Grow.", "Secure Your Future."].map((p, i) => (
               <span
                 key={p}
@@ -40,11 +40,11 @@ export default function Hero() {
             ))}
           </div>
 
-          <p className="reveal mt-7 max-w-xl text-lg leading-relaxed text-white/70">
+          <p className="reveal mx-auto mt-7 max-w-xl text-lg leading-relaxed text-white/70 lg:mx-0">
             Customized financial plans to protect your income, grow your wealth, and reduce unnecessary taxes.
           </p>
 
-          <div className="reveal mt-9 flex flex-col gap-4 sm:flex-row">
+          <div className="reveal mt-9 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href={CALENDLY}
               target="_blank"

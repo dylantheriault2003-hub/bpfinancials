@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Process from "./components/Process";
 import About from "./components/About";
-import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
 import Booking from "./components/Booking";
 import CtaSection from "./components/CtaSection";
@@ -50,7 +49,6 @@ export default function App() {
         <Services />
         <Process />
         <About />
-        <Testimonials />
         <Faq />
         <Booking />
         <CtaSection />

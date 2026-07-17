@@ -60,7 +60,7 @@ export default function Faq() {
   return (
     <section id="faq" className="bg-clarity-50 py-24 text-navy-900">
       <div className="container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
+        <div className="text-center lg:text-left">
           <p className="reveal mb-3 text-xs font-bold uppercase tracking-[0.25em] text-cobalt-600">FAQ</p>
           <h2 className="reveal text-4xl font-black tracking-tight sm:text-5xl">
             Questions? Good — you should have them.

@@ -49,7 +49,7 @@ export default function Navbar() {
 
       {open && (
         <div className="border-t border-white/10 bg-navy-950/95 px-6 py-6 lg:hidden">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-center">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
