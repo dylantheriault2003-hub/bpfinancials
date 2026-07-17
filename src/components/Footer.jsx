@@ -22,9 +22,12 @@ const InstagramIcon = (props) => (
 );
 
 const SOCIALS = [
-  { icon: LinkedInIcon, label: "LinkedIn" },
-  { icon: FacebookIcon, label: "Facebook" },
-  { icon: InstagramIcon, label: "Instagram" },
+  { icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/brendon.porter.52" },
+  {
+    icon: InstagramIcon,
+    label: "Instagram",
+    href: "https://www.instagram.com/brendonporter_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  },
 ];
 
 export default function Footer() {
@@ -75,10 +78,10 @@ export default function Footer() {
             </li>
           </ul>
           <div className="mt-5 flex justify-center gap-3 md:justify-start">
-            {SOCIALS.map(({ icon: Icon, label }) => (
+            {SOCIALS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
-                href={CALENDLY}
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}

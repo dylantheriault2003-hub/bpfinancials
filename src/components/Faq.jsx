@@ -63,7 +63,7 @@ export default function Faq() {
         <div className="text-center lg:text-left">
           <p className="reveal mb-3 text-xs font-bold uppercase tracking-[0.25em] text-cobalt-600">FAQ</p>
           <h2 className="reveal text-4xl font-black tracking-tight sm:text-5xl">
-            Questions? Good — you should have them.
+            Questions? Good. You should have them.
           </h2>
           <p className="reveal mt-4 text-lg text-navy-900/60">
             Your finances matter. Here are honest answers to the things people ask before booking a call.
